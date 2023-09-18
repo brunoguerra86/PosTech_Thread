@@ -1,4 +1,6 @@
 public class TesteContador {
+    
+    // Compartilhamento de informações entre threads
     public static void main(String[] args) {
         Contador contador = new Contador();
 

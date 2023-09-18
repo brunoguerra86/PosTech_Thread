@@ -1,4 +1,6 @@
 public class TesteEspera {
+
+    // Utilização de mecanismos de espera e notificação
     public static void main(String[] args){
         Espera espera = new Espera();
 
