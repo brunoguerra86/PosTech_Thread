@@ -1,11 +1,15 @@
 public class Contador {
-    private int valor = 0;
+    private int contador = 0;
 
     public synchronized void incrementar() {
-        valor++;
+        contador++;
     }
 
-    public int getValor() {
-        return valor;
+    public synchronized void decrementar() {
+        contador--;
+    }
+
+    public int getContador() {
+        return contador;
     }  
 }

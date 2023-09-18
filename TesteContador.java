@@ -1,4 +1,4 @@
-public class Main {
+public class TesteContador {
     public static void main(String[] args) {
         Contador contador = new Contador();
 
@@ -21,6 +21,6 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("Valor final: " + contador.getValor());
+        System.out.println("Valor final do contador: " + contador.getContador());
   }
 }
