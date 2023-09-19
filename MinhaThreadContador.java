@@ -22,10 +22,19 @@ public class MinhaThreadContador extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Thread em execução");
+        try {
+            // Código que pode lançar exceções
+            
+            System.out.println("Thread em execução");
         
-        for(int i = 0; i < 10000; i++){
-            contador.incrementar();
-        }        
+            for(int i = 0; i < 10000; i++){
+                contador.incrementar();
+            }
+
+        } catch (Exception e) {
+            // Tratamento da exceção
+        } finally {
+            // Código a ser executado sempre, independentemente de ocorrer exceção ou não
+        }
     }
 }
