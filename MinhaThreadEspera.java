@@ -1,4 +1,4 @@
-public class MinhaThread extends Thread {
+public class MinhaThreadEspera extends Thread {
     
     /*  Enum de Thread.State:
         
@@ -11,29 +11,12 @@ public class MinhaThread extends Thread {
     */
     
     // ----------------------------------
-    // TesteContador.java    
-    // ----------------------------------
-    
-    // private Contador contador;
-
-    // public MinhaThread(Contador contador) {
-    //     this.contador = contador;
-    // }
-
-    // @Override
-    // public void run() {
-    //     System.out.println("Thread em execução");
-    //     contador.incrementar();
-    //     contador.decrementar();
-    // }
-
-    // ----------------------------------
     // TesteEspera.java
     // ----------------------------------
 
     private Espera espera;
 
-    public MinhaThread(Espera espera) {
+    public MinhaThreadEspera(Espera espera) {
         this.espera = espera;
     }
 

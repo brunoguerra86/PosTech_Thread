@@ -4,7 +4,7 @@ public class TesteEspera {
     public static void main(String[] args){
         Espera espera = new Espera();
 
-        MinhaThread thread = new MinhaThread(espera);
+        MinhaThreadEspera thread = new MinhaThreadEspera(espera);
 
         thread.start();
 

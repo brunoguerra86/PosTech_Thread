@@ -4,8 +4,8 @@ public class TesteContador {
     public static void main(String[] args) {
         Contador contador = new Contador();
 
-        MinhaThread thread1 = new MinhaThread(contador);
-        MinhaThread thread2 = new MinhaThread(contador);
+        MinhaThreadContador thread1 = new MinhaThreadContador(contador);
+        MinhaThreadContador thread2 = new MinhaThreadContador(contador);
 
         System.out.println("Estado da thread(1): " + thread1.getState()); // NEW
         System.out.println("Estado da thread(2): " + thread2.getState()); // NEW
