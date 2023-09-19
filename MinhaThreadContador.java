@@ -31,6 +31,13 @@ public class MinhaThreadContador extends Thread {
                 contador.incrementar();
             }
 
+            if (Thread.interrupted())  // Clears interrupted status!
+                throw new InterruptedException();
+
+        } catch ( InterruptedException e ) {
+            e.printStackTrace();
+        } catch ( ArithmeticException e ) {
+            System.out.println("Exceção: " + e.getMessage());
         } catch (Exception e) {
             // Tratamento da exceção
         } finally {
