@@ -5,6 +5,14 @@ public class Contador {
         contador++;
     }
 
+    // Exemplo de bloco synchronized
+
+    // public void incrementar(){
+    //     synchronized (this){
+    //         contador++;
+    //     }
+    // }
+
     public synchronized void decrementar() {
         contador--;
     }

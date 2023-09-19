@@ -23,8 +23,9 @@ public class MinhaThreadContador extends Thread {
     @Override
     public void run() {
         System.out.println("Thread em execução");
-        contador.incrementar();
-        contador.decrementar();
+        
+        for(int i = 0; i < 10000; i++){
+            contador.incrementar();
+        }        
     }
-
 }
