@@ -2,6 +2,10 @@ public class TesteContador {
     
     // Compartilhamento de informações entre threads
     public static void main(String[] args) {
+        // o método setDefaultUncaughtExceptionHandler() define o 
+        // tratador global de exceções (ExceptionHandler) para todas as threads
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler());
+
         Contador contador = new Contador();
 
         MinhaThreadContador thread1 = new MinhaThreadContador(contador);
